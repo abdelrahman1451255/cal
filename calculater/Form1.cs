@@ -16,5 +16,52 @@ namespace calculater
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            float num1 = float.Parse(textBox1.Text);
+
+            float num2 = float.Parse(textBox2.Text);
+            float res = num1 + num2;
+            textBox3.Text = res.ToString();
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            float num1 = float.Parse(textBox1.Text);
+
+            float num2 = float.Parse(textBox2.Text);
+            float res = num1 - num2;
+            textBox3.Text = res.ToString();
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            float num1 = float.Parse(textBox1.Text);
+
+            float num2 = float.Parse(textBox2.Text);
+            float res = num1 * num2;
+            textBox3.Text = res.ToString();
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            float num1 = float.Parse(textBox1.Text);
+
+            float num2 = float.Parse(textBox2.Text);
+            float res = num1 / num2;
+            textBox3.Text = res.ToString();
+            textBox1.Clear();
+            textBox2.Clear();
+        }
     }
 }
